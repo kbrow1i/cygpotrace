@@ -1,0 +1,25 @@
+From cygwin-announce-potrace-1.14-1 Wed Mar 15 16:03:49 2017
+From: Ken Brown <kbrown@cornell.edu>
+To: cygwin-announce@cygwin.com
+Date: Wed, 15 Mar 2017 16:03:49 -0400
+Subject: potrace 1.14-1
+
+The following packages have been uploaded to the Cygwin distribution:
+
+* potrace-1.14-1
+* libpotrace0-1.14-1
+* libpotrace-devel-1.14-1
+
+Potrace is a tool for tracing a bitmap, which means, transforming a
+bitmap into a smooth, scalable image.  The input is a bitmap (PBM,
+PGM, PPM, or BMP), and the default output is one of several vector
+file formats.  A typical use is to create EPS files from scanned data,
+such as company or university logos, handwritten notes, etc.  The
+resulting image is not jaggy like a bitmap, but smooth.  It can then
+be rendered at any resolution.
+
+This is an update of potrace to the latest upstream release.  The
+packages libpotrace0 and libpotrace-devel are new with this release.
+
+Ken Brown
+Cygwin's new potrace maintainer
