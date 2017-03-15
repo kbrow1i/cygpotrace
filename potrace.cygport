@@ -1,0 +1,27 @@
+NAME="potrace"
+VERSION=1.14
+RELEASE=1
+
+HOMEPAGE="http://potrace.sourceforge.net/"
+SUMMARY="A tool for transforming bitmaps into vector graphics"
+DESCRIPTION="Potrace is a tool for tracing a bitmap, which means, transforming a
+bitmap into a smooth, scalable image.  The input is a bitmap (PBM,
+PGM, PPM, or BMP), and the default output is one of several vector
+file formats.  A typical use is to create EPS files from scanned data,
+such as company or university logos, handwritten notes, etc.  The
+resulting image is not jaggy like a bitmap, but smooth.  It can then
+be rendered at any resolution."
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+
+potrace_CATEGORY="Graphics"
+libpotrace0_CATEGORY="Graphics Libs"
+libpotrace_devel_CATEGORY="Graphics Devel"
+
+potrace_CONTENTS="usr/bin/*.exe usr/share"
+libpotrace0_CONTENTS="usr/bin/cygpotrace-0.dll"
+libpotrace_devel_CONTENTS="usr/include usr/lib"
+
+SRC_URI="${HOMEPAGE}/download/${PV}/${P}.tar.gz"
+
+CYGCONF_ARGS="--with-libpotrace"
